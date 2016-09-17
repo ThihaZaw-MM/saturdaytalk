@@ -14,7 +14,8 @@ app.use(cookieParser());
 
 
 app.use(function(req, res, next) {
-  var allowedOrigins = ['http://139.162.42.111','http://localhost:8080', 'http://localhost:3000'];
+  var allowedOrigins = ['http://139.162.42.111','http://localhost:8080', 
+      'http://localhost:3000', 'http://139.162.42.111:3100'];
   var origin = req.headers.origin;
 
   if(allowedOrigins.indexOf(origin) > -1){
